@@ -68,6 +68,8 @@ header {
   display: none;
 }
 
+/*Home*/
+
 .hero {
   height: 100%;
   width: 100%;
@@ -261,4 +263,94 @@ section {
     #menu-toggle:checked + label.menu-icon-action + ul{
         right: 0%;
     }
+}
+
+/*About me*/
+
+#about-me{
+  height: 70vh;
+  
+}
+
+#about-me div{
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me div h1{
+  font-size: 3.5rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+#about-me div p{
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#portfolio{
+  height: 80vh;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#portfolio h1{
+  margin-top: 40px;
+  font-size: 3.5rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.caja-proyectos{
+  width: 75%;
+  height: 75%;
+  border: 1px solid white;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;  
+}
+
+.caja-proyectos div{
+  display: flex;
+  margin: 10px;
+  background-color: red;
+  border: 1px solid white;
+  transition: all .5s ease;
+}
+
+.caja1{
+  background-image: url(assets/web1.png);
+  background-size: cover;
+}
+.caja2{
+  background-image: url(assets/web2.png);
+  background-size: cover;
+}
+.caja3{
+  background-image: url(assets/web3.png);
+  background-size: cover;
+}
+.caja4{
+  background-image: url(assets/web4.png);
+  background-size: cover;
+}
+.caja5{
+  background-image: url(assets/web5.png);
+  background-size: cover;
+}
+.caja6{
+  background-image: url(assets/web6.png);
+  background-size: cover;
+}
+
+.caja-proyectos div:hover{
+  margin: 30px;
 }
